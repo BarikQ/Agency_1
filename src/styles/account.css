@@ -1,0 +1,129 @@
+
+.content-info {
+  display: grid;
+  grid-template: 1fr / auto 1fr;
+  grid-gap: 1px 42px;
+}
+
+.info-item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 190.5%;
+  color: #333333;
+}
+
+.info-item-value {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 190.5%;
+  color: #333333;
+}
+
+.info-item-link,
+.table-item-link {
+  color: rgba(81, 129, 184, 1) !important;
+  text-decoration: underline;
+}
+
+.column-card-timezone {
+  padding-bottom: 31px;
+}
+
+.blank-item {
+  color: #C1C1C1;
+}
+
+.info-item-value > .info-item-link {
+  position: relative; 
+  left: 20px;
+}
+
+.info-item-generate {
+  position: relative;
+  top: -5px;
+}
+
+.info-item-generate > .info-item-link:first-child {
+  left: 0;
+}
+
+/* .info-item-generate > .info-item-link {
+  left: 0;
+} */
+
+.column-card-notifications {
+  padding-bottom: 39px;
+}
+
+.card-content-notifications {
+  margin-top: 4px;
+}
+
+.notifications-table {
+  margin-top: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template: repeat(4, auto) / 1fr 65px 65px;
+  border: 1px solid #E2E7EF;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.linker-table {
+  margin-top: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template: repeat(4, auto) / minmax(min-content, 158px) 1fr minmax(min-content, 184px);
+  border: 1px solid #E2E7EF;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.notifications-table-column,
+.linker-table-column {
+  border-left: 1px solid #E2E7EF;
+}
+
+.notifications-table-column:first-of-type,
+.linker-table-column:first-of-type .table-item {
+  border-left: 0;
+}
+
+.notifications-table-column:first-of-type .table-item,
+.linker-table-column:first-of-type .table-item,
+.linker-table-account .table-item {
+  padding-left: 9px;
+}
+
+.notifications-table-email .table-item,
+.notifications-table-sms .table-item,
+.linker-table-actions .table-item  {
+  justify-content: center;
+}
+
+.table-item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 190.5%;
+  color: #333333;
+}
+
+.column-card-linker {
+  padding-bottom: 39px;
+}
+
+.column-card-linker .column-card-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.column-card-linker .card-content {
+  padding-top: 4px;
+}
+
+.column-card-user {
+  padding-bottom: 29px;
+}

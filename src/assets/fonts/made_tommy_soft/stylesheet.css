@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Black.woff2') format('woff2'),
+        url('MADETommySoft-Black.woff') format('woff'),
+        url('MADETommySoft-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Black.woff2') format('woff2'),
+        url('MADETommySoftOutline-Black.woff') format('woff'),
+        url('MADETommySoftOutline-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Bold.woff2') format('woff2'),
+        url('MADETommySoft-Bold.woff') format('woff'),
+        url('MADETommySoft-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Bold.woff2') format('woff2'),
+        url('MADETommySoftOutline-Bold.woff') format('woff'),
+        url('MADETommySoftOutline-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Medium.woff2') format('woff2'),
+        url('MADETommySoftOutline-Medium.woff') format('woff'),
+        url('MADETommySoftOutline-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-ExtraBold.woff2') format('woff2'),
+        url('MADETommySoftOutline-ExtraBold.woff') format('woff'),
+        url('MADETommySoftOutline-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Medium.woff2') format('woff2'),
+        url('MADETommySoft-Medium.woff') format('woff'),
+        url('MADETommySoft-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Thin.woff2') format('woff2'),
+        url('MADETommySoftOutline-Thin.woff') format('woff'),
+        url('MADETommySoftOutline-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-ExtraBold.woff2') format('woff2'),
+        url('MADETommySoft-ExtraBold.woff') format('woff'),
+        url('MADETommySoft-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Light.woff2') format('woff2'),
+        url('MADETommySoft-Light.woff') format('woff'),
+        url('MADETommySoft-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline.woff2') format('woff2'),
+        url('MADETommySoftOutline.woff') format('woff'),
+        url('MADETommySoftOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft.woff2') format('woff2'),
+        url('MADETommySoft.woff') format('woff'),
+        url('MADETommySoft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Light.woff2') format('woff2'),
+        url('MADETommySoftOutline-Light.woff') format('woff'),
+        url('MADETommySoftOutline-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Thin.woff2') format('woff2'),
+        url('MADETommySoft-Thin.woff') format('woff'),
+        url('MADETommySoft-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
