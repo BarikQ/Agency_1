@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <input class="menu-checkbox popup-checkbox" type="checkbox" name="" id="menu-checkbox">
+  <input class="menu-checkbox popup-checkbox" type="checkbox" name="" id="menu-checkbox" />
 
   <div class="popup popup-menu">
     <label class="menu-close-wrapper menu-label" for="menu-checkbox">
@@ -248,6 +248,33 @@
                   </span>
 
                   <span class="info-item-value"> Нет </span>
+
+                  <span class="info-item-title mobile-notification bold">
+                    Новости
+                  </span>
+
+                  <span class="info-item-value mobile-notification notifications-child">
+                    <span>Email: <span>Нет</span></span>
+                    <span>SMS: <span>Нет</span></span>
+                  </span>
+
+                  <span class="info-item-title mobile-notification bold">
+                    Системные уведомления
+                  </span>
+
+                  <span class="info-item-value mobile-notification notifications-child">
+                    <span>Email: <span>Нет</span></span>
+                    <span>SMS: <span>Нет</span></span>
+                  </span>
+
+                  <span class="info-item-title mobile-notification bold">
+                    Уведомления о лимитах по офферу
+                  </span>
+
+                  <span class="info-item-value mobile-notification notifications-child">
+                    <span>Email: <span>Нет</span></span>
+                    <span>SMS: <span>Нет</span></span>
+                  </span>
                 </ul>
               </div>
 
@@ -292,25 +319,77 @@
             <div class="column-card-content">
               <div class="card-content card-content-linker">
                 <ul class="content-info">
-                  <div class="content-table linker-table">
-                    <div class="linker-table-column">
+                  <table class="linker-table">
+                    <tr>
+                      <th>
+                        <span class="table-item table-item-head bold">Сервис</span>
+                      </th>
+
+                      <th class="linker-table-account">
+                        <span class="table-item table-item-head bold">Учетная запись</span>
+                      </th>
+
+                      <th>
+                        <span class="table-item table-item-head bold">Действия</span>
+                      </th>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="table-item table-item-title">
+                          Вконтакте
+                          <a class="table-item-link table-item-link-mobile">Подключить</a>
+                        </span>
+                      </td>
+
+                      <td class="linker-table-account"><span class="table-item table-item-sub"></span></td>
+
+                      <td class="linker-table-account">
+                        <a class="table-item table-item-sub table-item-link">Подключить</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <span class="table-item table-item-title">
+                          Facebook
+                          <a class="table-item-link table-item-link-mobile">Подключить</a>
+                        </span>
+                      </td>
+
+                      <td><span class="table-item table-item-sub"></span></td>
+
+                      <td>
+                        <a class="table-item table-item-sub table-item-link">Подключить</a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- <div class="content-table linker-table">
+                    <div class="linker-table-row linker-table-service">
                       <span class="table-item table-item-head bold">Сервис</span>
-                      <span class="table-item table-item-title">Вконтакте</span>
-                      <span class="table-item table-item-title">Facebook</span>
-                    </div>
-
-                    <div class="linker-table-column linker-table-account">
                       <span class="table-item table-item-head bold">Учетная запись</span>
-                      <span class="table-item table-item-sub"></span>
-                      <span class="table-item table-item-sub"></span>
+                      <span class="table-item table-item-head bold">Действия</span>
                     </div>
 
-                    <div class="linker-table-column linker-table-actions">
-                      <span class="table-item table-item-head bold">Действия</span>
-                      <a class="table-item table-item-sub table-item-link">Подключить</a>
+                    <div class="linker-table-row linker-table-account">
+                      <span class="table-item table-item-title">
+                        Вконтакте
+                        <a class="table-item-link table-item-link-mobile">Подключить</a>
+                      </span>
+                      <span class="table-item table-item-sub"></span>
                       <a class="table-item table-item-sub table-item-link">Подключить</a>
                     </div>
-                  </div>
+
+                    <div class="linker-table-row linker-table-actions">
+                      <span class="table-item table-item-title">
+                        Facebook
+                        <a class="table-item-link table-item-link-mobile">Подключить</a>
+                      </span>
+                      <span class="table-item table-item-sub"></span>
+                      <a class="table-item table-item-sub table-item-link">Подключить</a>
+                    </div>
+                  </div> -->
                 </ul>
               </div>
             </div>

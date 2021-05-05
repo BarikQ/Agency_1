@@ -243,6 +243,10 @@ a:hover {
   border-bottom: 1px solid #e2e7ef;
 }
 
+.table-item:last-child {
+  border-bottom: none;
+}
+
 .table-item-sub {
   justify-content: center;
 }
@@ -334,9 +338,12 @@ a:hover {
     flex-direction: row;
   }
 
+  .card-header-buttons > .card-button-edit:first-child {
+    margin-right: 11px;
+  }
+
   .api-token {
     word-break: break-all;
-    /* overflow: scroll; */
   }
 
   .popup-menu {
@@ -413,7 +420,7 @@ a:hover {
     font-weight: bold;
     font-size: 18px;
     line-height: 190.5%;
-    color: #333333
+    color: #333333;
   }
 
   .telegram-link {
@@ -469,5 +476,45 @@ a:hover {
   .menu-item {
     font-size: 18px;
     line-height: 145%;
+  }
+
+  .page-title {
+    font-size: 22px;
+    line-height: 125%;
+  }
+
+  .page-title-sub {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    color: #333333;
+  }
+
+  .main-columns {
+    margin-top: 22px;
+  }
+
+  .column-card {
+    padding: 20px 10px;
+  }
+
+  .card-content {
+    padding-top: 6px;
+  }
+
+  .column-card-title {
+    font-size: 15px;
+    line-height: 145%;
+  }
+
+  .info-item-title:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  .info-item-title,
+  .info-item-value {
+    font-size: 15px !important;
+    line-height: 22.5px !important;
   }
 }
