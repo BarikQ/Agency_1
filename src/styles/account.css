@@ -36,7 +36,7 @@
 
 .info-item-value > .info-item-link {
   position: relative; 
-  left: 20px;
+  /* left: 20px; */
 }
 
 .info-item-generate {
@@ -45,7 +45,7 @@
 }
 
 .info-item-generate > .info-item-link:first-child {
-  left: 0;
+  margin-right: 20px;
 }
 
 /* .info-item-generate > .info-item-link {
@@ -76,7 +76,7 @@
   grid-column-start: 1;
   grid-column-end: 3;
   display: grid;
-  grid-template: repeat(4, auto) / minmax(min-content, 158px) 1fr minmax(min-content, 184px);
+  grid-template: repeat(3, auto) / minmax(min-content, 158px) 1fr minmax(min-content, 184px);
   border: 1px solid #E2E7EF;
   box-sizing: border-box;
   border-radius: 2px;
@@ -126,4 +126,17 @@
 
 .column-card-user {
   padding-bottom: 29px;
+}
+
+@media (max-width: 1024px) {
+  .linker-table {
+    grid-template: auto auto auto / repeat(3, auto);
+  }
+
+  .info-item-generate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
