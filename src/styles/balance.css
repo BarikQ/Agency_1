@@ -58,7 +58,7 @@
 }
 
 .column-card-withdraw .column-card-header {
-  padding-bottom: 9px;
+  padding-bottom: 10px;
 }
 
 .column-card-withdraw .card-content {
@@ -75,7 +75,6 @@
     border-bottom: 1px solid #E2E7EF;
   }
   
-
   .column-card {
     padding-bottom: 16px;
   }
@@ -99,7 +98,7 @@
 
 @media (max-width: 425px) {
   .withdraw-button {
-    margin: 0;
+    margin: 5px 0 0;
   }
 
   .withdraw-button:first-child {
@@ -113,5 +112,9 @@
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+  } 
+  
+  .column-card-withdraw {
+    padding-bottom: 21px;
   }
 }
