@@ -300,7 +300,8 @@ a:hover {
   }
 
   .page-title-wrapper,
-  .main-menu {
+  .main-menu,
+  .header-content {
     padding: 0 15px;
   }
 
@@ -342,8 +343,8 @@ a:hover {
     flex-direction: row;
   }
 
-  .card-header-buttons > .card-button-edit:first-child {
-    margin-right: 11px;
+  .card-header-buttons > .card-button-edit:last-child {
+    margin-left: 11px;
   }
 
   .api-token {
