@@ -148,7 +148,7 @@ a:hover {
   padding: 20px 20px 10px;
   background: #eef1f7;
   border-radius: 8px;
-  border-top-left-radius: 0;
+  /* border-top-left-radius: 0; */
 }
 
 .column-card {
