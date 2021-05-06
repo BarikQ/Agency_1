@@ -291,6 +291,10 @@ a:hover {
     padding: 0;
   }
 
+  .main-column {
+    border-radius: 0;
+  }
+
   .main-menu {
     display: none;
   }
