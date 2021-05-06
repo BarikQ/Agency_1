@@ -1,0 +1,117 @@
+.main-column {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.column-card {
+  padding-bottom: 27px;
+  margin: 0;
+}
+
+.column-card-header {
+  padding-bottom: 13px;
+}
+
+.card-content {
+  padding-top: 9px;
+}
+
+.money-amount {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 190.5%;
+  color: #333333;
+}
+
+.column-card-withdraw .column-card-header {
+  border-bottom: none;
+}
+
+.withdraw-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.withdraw-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+
+.withdraw-button:first-child {
+  width: 100%;
+  max-width: 134px;
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+.withdraw-button:last-child {
+  width: 100%;
+  max-width: 176px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.column-card-withdraw .column-card-header {
+  padding-bottom: 9px;
+}
+
+.column-card-withdraw .card-content {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .main-column {
+    padding: 15px;
+    grid-template: 1fr / 1fr;
+  }
+  
+  .column-card-withdraw .column-card-header {
+    border-bottom: 1px solid #E2E7EF;
+  }
+  
+
+  .column-card {
+    padding-bottom: 16px;
+  }
+  
+  .column-card-header {
+    padding-bottom: 10px;
+  }
+
+  .card-content {
+    padding-top: 6px;
+  }
+
+  .column-card-withdraw .card-content {
+    padding-top: 26px;
+  }
+
+  .column-card-withdraw {
+    padding-bottom: 26px;
+  }
+}
+
+@media (max-width: 425px) {
+  .withdraw-button {
+    margin: 0;
+  }
+
+  .withdraw-button:first-child {
+    max-width: 84px;
+    margin-right: 5px;
+    background: #27AE60;
+    border-color: #27AE60;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

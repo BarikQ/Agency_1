@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Баланс</title>
+
+  <link rel="stylesheet" href="./../src/styles/normalize.css" />
+  <link rel="stylesheet" href="./../src/assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="./../src/styles/index.css" />
+  <link rel="stylesheet" href="./../src/styles/balance.css" />
+</head>
+
+<body>
+  <input class="menu-checkbox popup-checkbox" type="checkbox" name="" id="menu-checkbox" />
+
+  <div class="popup popup-menu">
+    <label class="menu-close-wrapper menu-label" for="menu-checkbox">
+      <img class="menu-close-icon" src="./../src/assets/images/menu-close.svg" alt="" />
+    </label>
+
+    <div class="popup-menu-content">
+      <div class="popup-menu-logo">
+        <img src="./../src/assets/images/agency-logo.svg" alt="" class="header-logo" />
+
+        <h1 class="header-title">Arbitrage.House</h1>
+      </div>
+
+      <div class="popup-menu-nav">
+        <ul class="popup-nav pages-menu">
+          <li class="menu-item">
+            <a href="./../index.html" class="menu-link">
+              <span>Мой аккаунт</span>
+            </a>
+          </li>
+
+          <li class="menu-item menu-item-active">
+            <a href="./stats.html" class="menu-link">
+              <span>Статистика</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="./balance.html" class="menu-link">
+              <span>Баланс</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <span>FAQ</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <span>Выход</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="popup-menu-support">
+        <span class="menu-support-title bold">Техподдержка:</span>
+        <div class="telegram-wrapper">
+          <img class="telegram-logo" src="./../src/assets/images/tg-logo.svg" alt="" />
+          <a class="telegram-link" href="#">@Arbitrage.House</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-content">
+      <div class="header-logo-wrapper">
+        <img src="./../src/assets/images/agency-logo.svg" alt="" class="header-logo" />
+
+        <h1 class="header-title">Arbitrage.House</h1>
+      </div>
+
+      <div class="header-button-wrapper">
+        <button class="header-button">
+          <span>Кабинет</span>
+        </button>
+
+        <label class="header-burger mobile menu-label" for="menu-checkbox">
+          <img class="header-burger-image" src="./../src/assets/images/menu-burger.svg" alt="" />
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-content">
+      <div class="page-title-wrapper">
+        <h2 class="page-title">ЛИЧНЫЙ КАБИНЕТ</h2>
+
+        <p class="page-title-sub mobile">Баланс</p>
+      </div>
+
+      <div class="main-columns">
+        <div class="main-menu">
+          <ul class="pages-menu">
+            <li class="menu-item">
+              <a href="./../index.html" class="menu-link">
+                <span>Мой аккаунт</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="./stats.html" class="menu-link">
+                <span>Статистика</span>
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-active">
+              <a href="./balance.html" class="menu-link">
+                <span>Баланс</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <span>FAQ</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <span>Выход</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-column">
+
+          <div class="column-card column-card-table">
+            <div class="column-card-header">
+              <h3 class="column-card-title">Все деньги вебмастера</h3>
+            </div>
+
+            <div class="column-card-content">
+              <div class="card-content">
+                <span class="money-amount">
+                  14 307 720, 92 руб
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column-card column-card-table">
+            <div class="column-card-header">
+              <h3 class="column-card-title">Сумма на кабинетах</h3>
+            </div>
+
+            <div class="column-card-content">
+              <div class="card-content">
+                <span class="money-amount">
+                  14 307 720, 92 руб
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column-card column-card-table">
+            <div class="column-card-header">
+              <h3 class="column-card-title">Заработок в холде</h3>
+            </div>
+
+            <div class="column-card-content">
+              <div class="card-content">
+                <span class="money-amount">
+                  14 307 720, 92 руб
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column-card column-card-table column-card-withdraw">
+            <div class="column-card-header">
+              <h3 class="column-card-title">Доступные для вывода средства</h3>
+            </div>
+
+            <div class="column-card-content">
+              <div class="card-content">
+                <div class="withdraw-buttons">
+                  <button class="withdraw-button yellow-button">
+                    <span>Вывести</span>
+                  </button>
+
+                  <button class="withdraw-button yellow-button">
+                    <span>Положить на кабинет</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </main>
+</body>
+
+
+<script src="./../src/scripts/index.js"></script>
+
+</html>
