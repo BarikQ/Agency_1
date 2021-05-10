@@ -401,6 +401,10 @@ body {
   text-decoration: underline;
 }
 
+.iti--separate-dial-code .iti__selected-flag {
+  background: white;
+}
+
 .iti {
   width: 100%;
 }
