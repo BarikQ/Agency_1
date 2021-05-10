@@ -21,8 +21,6 @@ input[type="radio"] {
 
 .radios-wrapper {
   height: 58px;
-  /* display: grid; */
-  /* grid-template: 55px / repeat(3, 1fr); */
   background: white;
   border: 2px solid #EEF1F6;
   border-radius: 8px 8px 0px 0px;
@@ -64,20 +62,8 @@ input[type="radio"] {
   padding: 0 34px;
 }
 
-.column-card:last-child {
-
-}
-
 .column-card:first-child .column-card-header {
   padding-bottom: 0;
-}
-
-.column-card:last-child .column-card-header {
-  /* padding-bottom: 14px; */
-}
-
-.column-card:last-child .droplist-container:not(:first-child) {
-  /* margin-top: 19px; */
 }
 
 .card-content {
@@ -87,12 +73,6 @@ input[type="radio"] {
 .column-card-header {
   height: 60px;
   cursor: pointer;
-  /* padding-bottom: 16px; */
-  /* border-bottom: none !important; */
-}
-
-.droplist-container {
-  /* border-bottom: 1px solid #E2E7EF; */
 }
 
 .column-card-header:hover {
@@ -106,7 +86,6 @@ input[type="radio"] {
 
 .droplist-checkbox:checked+.column-card-header {
   border-bottom: 1px solid #E2E7EF !important;
-  /* padding-bottom: 15px !important;  */
 }
 
 .droplist-checkbox:checked+.column-card-header .header-dropdown {
@@ -135,7 +114,6 @@ input[type="radio"] {
 
 @media (max-width: 425px) {
   .column-card {
-    padding: 19px 0 19px;
     margin-top: 15px;
   }
 
@@ -164,17 +142,5 @@ input[type="radio"] {
 
   .card-content {
     padding-top: 6px;
-  }
-
-  .droplist-checkbox:checked+.column-card-header {
-    padding-bottom: 10px !important; 
-  }
-
-  .column-card:last-child .column-card-header {
-    padding-bottom: 19px;
-  }
-
-  .column-card:last-child {
-    padding: 19px 0;
   }
 }
