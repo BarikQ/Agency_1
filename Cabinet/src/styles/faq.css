@@ -55,8 +55,7 @@ input[type="radio"] {
 }
 
 .column-card {
-  /* padding: 19px 0 23px; */
-  padding: 19px 0 17px;
+  padding: 0;
   margin-top: 30px;
 }
 
@@ -66,7 +65,7 @@ input[type="radio"] {
 }
 
 .column-card:last-child {
-  padding: 19px 0 15px;
+
 }
 
 .column-card:first-child .column-card-header {
@@ -74,11 +73,11 @@ input[type="radio"] {
 }
 
 .column-card:last-child .column-card-header {
-  padding-bottom: 14px;
+  /* padding-bottom: 14px; */
 }
 
 .column-card:last-child .droplist-container:not(:first-child) {
-  margin-top: 19px;
+  /* margin-top: 19px; */
 }
 
 .card-content {
@@ -86,8 +85,9 @@ input[type="radio"] {
 }
 
 .column-card-header {
+  height: 60px;
   cursor: pointer;
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
   /* border-bottom: none !important; */
 }
 
@@ -106,7 +106,7 @@ input[type="radio"] {
 
 .droplist-checkbox:checked+.column-card-header {
   border-bottom: 1px solid #E2E7EF !important;
-  padding-bottom: 15px !important; 
+  /* padding-bottom: 15px !important;  */
 }
 
 .droplist-checkbox:checked+.column-card-header .header-dropdown {
@@ -125,6 +125,7 @@ input[type="radio"] {
 }
 
 .droplist-paragraph {
+  padding-bottom: 15px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
