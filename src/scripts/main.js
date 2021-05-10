@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const sendButton = document.querySelector('#send-code');
   const closeButtons = document.querySelectorAll('.popup-close-wrapper');
   const popupInputs = document.querySelectorAll('.popup-input');
+  const loginButton = document.querySelector('#login-button');
 
   popups.forEach(popup => {
     popup.addEventListener('click', (event) => {
@@ -119,6 +120,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
           wrapper.classList.remove('hide');
         }
       });
+    });
+  });
+
+  loginButton.addEventListener('click', (event) => {
+    popupsWrappers.forEach(wrapper => {
+      if (!wrapper.classList.contains('login-wrapper')) {
+        if (!wrapper.classList.contains('hide')) {
+          wrapper.classList.add('hide');
+        }
+      } else {
+        if (wrapper.classList.contains('hide')) {
+          wrapper.classList.remove('hide');
+        }
+      }
     });
   });
 
