@@ -5,439 +5,736 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Личный кабинет</title>
-
-  <link rel="stylesheet" href="./src/styles/normalize.css" />
   <link rel="stylesheet" href="./src/assets/fonts/fonts.css" />
-  <link rel="stylesheet" href="./src/styles/index.css" />
-  <link rel="stylesheet" href="./src/styles/account.css" />
+  <link rel="stylesheet" href="./src/phone/css/intlTelInput.min.css" />
+
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <title>Agency</title>
 </head>
 
 <body>
-  <input class="menu-checkbox popup-checkbox" type="checkbox" name="" id="menu-checkbox" />
+  <input class="popup-checkbox" checked type="checkbox" name="" id="popup-signup" />
 
-  <div class="popup popup-menu">
-    <label class="menu-close-wrapper menu-label" for="menu-checkbox">
-      <img class="menu-close-icon" src="./src/assets/images/menu-close.svg" alt="" />
-    </label>
+  <div class="popup popup-signup" id="popup-signup">
+    <div class="popup-wrapper signup-wrapper">
+      <div class="popup-container signup-container">
+        <label class="popup-close-wrapper" for="popup-signup">
+          <img class="popup-close-icon" src="./src/images/burger-button-close.svg" alt="" />
+        </label>
 
-    <div class="popup-menu-content">
-      <div class="popup-menu-logo">
-        <img src="./src/assets/images/agency-logo.svg" alt="" class="header-logo" />
+        <div class="popup-content signup-content">
+          <div class="popup-head">
+            <span class="popup-head-title">Регистрация веб мастера</span>
 
-        <h1 class="header-title">Arbitrage.House</h1>
+            <div class="login-check">
+              <span class="login-check-text">У вас уже есть аккаунт?</span>
+
+              <div class="login-check-actions">
+                <button class="login-check-button yellow-button" id="login-transition">
+                  <span>Вход</span>
+                </button>
+                <a href="">Забыли пароль?</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="popup-form">
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="Имя" type="text" name="first-name" id="" />
+
+              <span class="input-error-message"> Ошибка с именем </span>
+            </div>
+
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="Фамилия" type="text" name="second-name"
+                id="" />
+
+              <span class="input-error-message"> Ошибка с фамилией </span>
+            </div>
+
+            <div class="input-item">
+              <select class="country" id="country" name="country"></select>
+
+              <span class="input-error-message"> Ошибка со страной </span>
+            </div>
+
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="Email" type="email" name="email" id="" />
+
+              <span class="input-error-message">
+                Такой Email уже существует
+              </span>
+            </div>
+
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="Пароль" type="password" name="password"
+                id="" />
+
+              <span class="input-error-message"> Ошибка с паролем </span>
+            </div>
+
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="" type="tel" name="tel" id="telephone" />
+
+              <span class="input-error-message"> Ошибка с номером </span>
+            </div>
+
+            <button class="popup-request-button yellow-button" type="submit" id="send-code">
+              <span>Выслать код</span>
+            </button>
+
+            <div class="popup-conditions">
+              <input class="conditions-checkbox" type="checkbox" name="conditions" id="conditions" />
+
+              <label class="contidions-label-icon" for="conditions"></label>
+
+              <label class="conditions-label" for="conditions">
+                <span class="conditions-text">
+                  Я согласен
+                  <a href="" class="conditions-link">с условиями работы</a>
+                  с сетью Arbitrage.House
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
 
-      <div class="popup-menu-nav">
-        <ul class="popup-nav pages-menu">
-          <li class="menu-item menu-item-active">
-            <a href="./index.html" class="menu-link">
-              <span>Мой аккаунт</span>
-            </a>
-          </li>
+    <div class="popup-wrapper login-wrapper hide">
+      <div class="popup-container login-container">
+        <label class="popup-close-wrapper" for="popup-signup">
+          <img class="popup-close-icon" src="./src/images/burger-button-close.svg" alt="" />
+        </label>
 
-          <li class="menu-item">
-            <a href="./pages/stats.html" class="menu-link">
-              <span>Статистика</span>
-            </a>
-          </li>
+        <div class="popup-content signup-content">
+          <div class="popup-head">
+            <span class="popup-head-title">Вход в личный кабинет</span>
+          </div>
 
-          <li class="menu-item">
-            <a href="./pages/balance.html" class="menu-link">
-              <span>Баланс</span>
-            </a>
-          </li>
+          <form class="popup-form">
+            <div class="login-form-error">
+              <span class="erorr-message">
+                Неверный адрес электронной почты или пароль
 
-          <li class="menu-item">
-            <a href="./pages/faq.html" class="menu-link">
-              <span>FAQ</span>
-            </a>
-          </li>
+                <a href="" class="error-link">Забыли пароль?</a>
+              </span>
+            </div>
 
-          <li class="menu-item">
-            <a href="#" class="menu-link">
-              <span>Выход</span>
-            </a>
-          </li>
-        </ul>
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="Email" type="email" name="Email" id="" />
+            </div>
+
+            <div class="input-item">
+              <input class="popup-input-text login-input-text" placeholder="Пароль" type="password" name="password"
+                id="" />
+            </div>
+
+            <div class="popup-remember-wrapper">
+              <div class="popup-remember">
+                <input class="remember-checkbox" type="checkbox" name="conditions" id="remember" />
+
+                <label class="contidions-label-icon" for="remember"></label>
+
+                <label class="conditions-label" for="remember">
+                  <span class="conditions-text"> Запомнить меня </span>
+                </label>
+              </div>
+
+              <button class="popup-login-button yellow-button" type="submit">
+                <span>Вход</span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
 
-      <div class="popup-menu-support">
-        <span class="menu-support-title bold">Техподдержка:</span>
-        <div class="telegram-wrapper">
-          <img class="telegram-logo" src="./src/assets/images/tg-logo.svg" alt="" />
-          <a class="telegram-link" href="#">@Arbitrage.House</a>
+    <div class="popup-wrapper confirm-wrapper hide">
+      <div class="popup-container login-container">
+        <label class="popup-close-wrapper" for="popup-signup">
+          <img class="popup-close-icon" src="./src/images/burger-button-close.svg" alt="" />
+        </label>
+
+        <div class="popup-content signup-content">
+          <div class="popup-head">
+            <span class="popup-head-title">Введите код подтверждения</span>
+          </div>
+
+          <form class="popup-form popup-form-error">
+            <div class="input-item">
+              <input class="popup-input-text" placeholder="Код из СМС" type="text" name="sms" id="" />
+
+              <span class="input-error-message"> Код введен неверно </span>
+            </div>
+
+            <button class="popup-confirm-button yellow-button" type="submit">
+              <span>Зарегистрироваться</span>
+            </button>
+            <button class="popup-confirm-button error-button yellow-button" type="submit">
+              <span>Отправить код повторно</span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
   <header class="header">
-    <div class="header-content">
-      <div class="header-logo-wrapper">
-        <img src="./src/assets/images/agency-logo.svg" alt="" class="header-logo" />
+    <div class="header-wrapper">
+      <div class="header-company company-wrapper">
+        <img class="company-wrapper__logo" src="./src/images/company-logo.svg" />
 
-        <h1 class="header-title">Arbitrage.House</h1>
+        <h2 class="company-wrapper__title">Arbitrage.House</h2>
       </div>
 
-      <div class="header-button-wrapper">
-        <button class="header-button">
-          <span>Кабинет</span>
-        </button>
-
-        <label class="header-burger mobile menu-label" for="menu-checkbox">
-          <img class="header-burger-image" src="./src/assets/images/menu-burger.svg" alt="" />
-        </label>
-      </div>
+      <label class="button-login" for="popup-signup">
+        <span class="button-login__text">Войти</span>
+      </label>
     </div>
   </header>
 
   <main class="main">
-    <div class="main-content">
-      <div class="page-title-wrapper">
-        <h2 class="page-title">ЛИЧНЫЙ КАБИНЕТ</h2>
+    <div class="main-block main-block__stats">
+      <img class="stats__bg" src="./src/images/Group 101.png" alt="" />
+      <img class="stats__bglogo" src="./src/images/company.svg" alt="" />
 
-        <p class="page-title-sub mobile">Мой аккаунт</p>
-      </div>
-
-      <div class="main-columns">
-        <div class="main-menu">
-          <ul class="pages-menu">
-            <li class="menu-item menu-item-active">
-              <a href="./index.html" class="menu-link">
-                <span>Мой аккаунт</span>
-              </a>
-            </li>
-
-            <li class="menu-item">
-              <a href="./pages/stats.html" class="menu-link">
-                <span>Статистика</span>
-              </a>
-            </li>
-
-            <li class="menu-item">
-              <a href="./pages/balance.html" class="menu-link">
-                <span>Баланс</span>
-              </a>
-            </li>
-
-            <li class="menu-item">
-              <a href="./pages/faq.html" class="menu-link">
-                <span>FAQ</span>
-              </a>
-            </li>
-
-            <li class="menu-item">
-              <a href="#" class="menu-link">
-                <span>Выход</span>
-              </a>
-            </li>
-          </ul>
+      <div class="block-stats__wrapper block-wrapper">
+        <div class="block-stats__item stats-title__wrapper">
+          <h2 class="stats-title">
+            Вот уже 3 года <br />
+            <span class="stats-title__big">МЫ ДЕЛАЕМ ВАС БОГАЧЕ</span>
+          </h2>
         </div>
 
-        <div class="main-column">
-          <div class="column-card column-card-account">
-            <div class="column-card-header">
-              <h3 class="column-card-title">Информация об учетной записи</h3>
+        <ul class="block-stats__item stats-numbers__list">
+          <li class="stats-numbers__item">
+            <span class="stats-number">500</span>
 
-              <div class="card-header-buttons">
-                <button class="yellow-button card-button card-button-edit">
-                  <img src="./src/assets/images/pencil.svg" alt="" class="card-button-pencil" />
-                  <span>Редактировать</span>
-                </button>
-              </div>
-            </div>
+            <span class="stats-info">
+              <span class="stats-number__power">к+</span>
+              <span class="stats-description">зарабатывает <br />
+                1 веб за месяц</span>
+            </span>
+          </li>
 
-            <div class="column-card-content">
-              <div class="card-content card-content-info">
-                <ul class="content-info">
-                  <span class="info-item-title bold"> Вебмастер ID </span>
+          <li class="stats-numbers__item">
+            <span class="stats-number">30</span>
 
-                  <span class="info-item-value bold"> 45551 </span>
+            <span class="stats-info">
+              <span class="stats-number__power">к+</span>
+              <span class="stats-description">вебов стало <br />
+                миллионерами</span>
+            </span>
+          </li>
 
-                  <span class="info-item-title bold">
-                    Имя учетной записи
-                  </span>
+          <li class="stats-numbers__item">
+            <span class="stats-number">500</span>
 
-                  <span class="info-item-value"> Сальвадор Дали </span>
+            <span class="stats-info">
+              <span class="stats-number__power">млн+</span>
+              <span class="stats-description">рублей всего <br />
+                выплачено</span>
+            </span>
+          </li>
+        </ul>
 
-                  <span class="info-item-title bold"> Отражаемое имя </span>
+        <div class="block-stats__item stats-button__wrapper">
+          <button class="stats-button">
+            <span class="stats-button__text">Регистрация</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
-                  <span class="info-item-value">
-                    Рябина и Zaimomen EPC от 50 руб
-                  </span>
+    <div class="main-block main-block__advantages">
+      <div class="block-advantages__wrapper block-wrapper">
+        <div class="block-header__wrapper">
+          <h1 class="block-header">
+            <span class="heading">ARBITRAGE.HOUSE</span>
+            <span class="tire">—</span> это площадка для закупки трафика на
+            финансовом рынке
+          </h1>
 
-                  <span class="info-item-title bold"> Страна </span>
+          <p class="block-description">
+            На протяжении 3 лет мы объединяем десятки вебмастеров и сотни
+            рекламодателей, и продолжаем улучшать наш сервис, чтобы с нами вы
+            могли заработать еще больше
+          </p>
+        </div>
 
-                  <span class="info-item-value"> Россия </span>
-
-                  <span class="info-item-title bold"> Менеджер </span>
-
-                  <a class="info-item-value info-item-link">
-                    Виталий (vl@leads.su)
-                  </a>
-
-                  <span class="info-item-title bold">
-                    Группа вебмастера
-                  </span>
-
-                  <span class="info-item-value"> Platinum </span>
-
-                  <span class="info-item-title bold">
-                    Реферальная ставка
-                  </span>
-
-                  <span class="info-item-value"> 5.00% </span>
-
-                  <span class="info-item-title bold"> HOLD (дни) </span>
-
-                  <span class="info-item-value"> 14 </span>
-                </ul>
-              </div>
-            </div>
+        <div class="logos-wrapper">
+          <div class="logos-list">
+            <img src="./src/images/yandex-logo.svg" alt="" class="logos-wrapper__item" />
+            <img src="./src/images/disk-logo.png" alt="" class="logos-wrapper__item" />
+            <img src="./src/images/inst-logo.png" alt="" class="logos-wrapper__item" />
+            <img src="./src/images/vk-logo.svg" alt="" class="logos-wrapper__item" />
+            <img src="./src/images/my-logo.svg" alt="" class="logos-wrapper__item" />
+            <img src="./src/images/tiktok-logo.svg" alt="" class="logos-wrapper__item tiktok-logo" />
           </div>
 
-          <div class="column-card column-card-timezone">
-            <div class="column-card-header">
-              <h3 class="column-card-title">Часовой пояс уведомлений</h3>
+          <span class="logos-list__description">Десятки площадок</span>
+        </div>
 
-              <div class="card-header-buttons">
-                <button class="yellow-button card-button card-button-edit">
-                  <img src="./src/assets/images/pencil.svg" alt="" class="card-button-pencil" />
-                  <span>Настроить часовой пояс</span>
-                </button>
-              </div>
-            </div>
+        <div class="scheme-wrapper">
+          <div class="scheme-column__text column-text_1">
+            <h3 class="scheme-column__title">
+              ЛУЧШЕЕ <br />
+              ДЛЯ ЛУЧШИХ
+            </h3>
 
-            <div class="column-card-content">
-              <div class="card-content card-content-info">
-                <ul class="content-info">
-                  <span class="info-item-title bold">Часовой пояс</span>
-
-                  <span class="info-item-value">
-                    Москва, Санкт-Петербург,<br /> Волгоград 3
-                  </span>
-                </ul>
-              </div>
-            </div>
+            <p class="scheme-column__description">
+              Твой менеджер расскажет, как настроить рекламные кабинеты, какие
+              креативы взять и какие подходы в рекламе сейчас выгодны именно
+              для тебя.
+            </p>
           </div>
 
-          <div class="column-card column-card-notifications">
-            <div class="column-card-header">
-              <h3 class="column-card-title">Подписка на уведомление</h3>
+          <div class="scheme-wrapper__graph scheme-wrapper__column">
+            <div class="graph">
+              <!-- <img class="scheme-line__1" src="./src/images/lines.png" alt="" /> -->
+              <img class="scheme-line scheme-line__1" src="./src/images/lines.svg" alt="" />
 
-              <div class="card-header-buttons">
-                <button class="yellow-button card-button card-button-edit">
-                  <img src="./src/assets/images/pencil.svg" alt="" class="card-button-pencil" />
-                  <span>Настроить уведомления</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="column-card-content">
-              <div class="card-content card-content-info">
-                <ul class="content-info">
-                  <span class="info-item-title bold">
-                    Получать уведомления по Email
-                  </span>
-
-                  <span class="info-item-value"> Нет </span>
-
-                  <span class="info-item-title bold">
-                    Получать уведомления по SMS
-                  </span>
-
-                  <span class="info-item-value"> Нет </span>
-
-                  <span class="info-item-title mobile-notification bold">
-                    Новости
-                  </span>
-
-                  <span class="info-item-value mobile-notification notifications-child">
-                    <span>Email: <span>Нет</span></span>
-                    <span>SMS: <span>Нет</span></span>
-                  </span>
-
-                  <span class="info-item-title mobile-notification bold">
-                    Системные уведомления
-                  </span>
-
-                  <span class="info-item-value mobile-notification notifications-child">
-                    <span>Email: <span>Нет</span></span>
-                    <span>SMS: <span>Нет</span></span>
-                  </span>
-
-                  <span class="info-item-title mobile-notification bold">
-                    Уведомления о лимитах по офферу
-                  </span>
-
-                  <span class="info-item-value mobile-notification notifications-child">
-                    <span>Email: <span>Нет</span></span>
-                    <span>SMS: <span>Нет</span></span>
-                  </span>
-                </ul>
-              </div>
-
-              <div class="card-content card-content-notifications">
-                <ul class="content-info">
-                  <span class="info-item-title bold"> Уведомления: </span>
-
-                  <br />
-
-                  <div class="content-table notifications-table">
-                    <span class="table-item table-item-head bold">Название</span>
-                    <span class="table-item table-item-head bold">Email</span>
-                    <span class="table-item table-item-head bold">SMS</span>
-
-                    <span class="table-item table-item-title">Новости</span>
-                    <span class="table-item table-item-sub">Нет</span>
-                    <span class="table-item table-item-sub">Нет</span>
-
-                    <span class="table-item table-item-title">Системные уведомления</span>
-                    <span class="table-item table-item-sub">Нет</span>
-                    <span class="table-item table-item-sub">Нет</span>
-
-                    <span class="table-item table-item-title">Уведомление о лимитах по офферу</span>
-                    <span class="table-item table-item-sub">Нет</span>
-                    <span class="table-item table-item-sub">Нет</span>
+              <div class="blocks">
+                <div class="scheme-block__wrapper">
+                  <div class="scheme-block">
+                    <img src="./src/images/bot-logo.svg" alt="" class="scheme-logo" />
                   </div>
-                </ul>
-              </div>
-            </div>
-          </div>
 
-          <div class="column-card column-card-linker">
-            <div class="column-card-header">
-              <h3 class="column-card-title">Привязать аккаунт</h3>
-            </div>
+                  <h4 class="scheme-block__title">
+                    Индивидуальный<br />
+                    <span class="scheme-block__normal">чат бот</span>
+                  </h4>
+                </div>
 
-            <div class="column-card-content">
-              <div class="card-content card-content-linker">
-                <ul class="content-info">
-                  <div class="linker-table">
-                    <span class="table-item table-item-head bold">Сервис</span>
-
-                    <span class="table-item table-item-head bold">Учетная запись</span>
-
-                    <span class="table-item table-item-head bold">Действия</span>
-
-                    <span class="table-item table-item-title">
-                      Вконтакте
-                      <a class="table-item-link table-item-link-mobile">Подключить</a>
-                    </span>
-
-                    <span class="table-item table-item-sub"></span>
-
-                    <a class="table-item table-item-sub table-item-link">Подключить</a>
-
-                    <span class="table-item table-item-title">
-                      Facebook
-                      <a class="table-item-link table-item-link-mobile">Подключить</a>
-                    </span>
-
-                    <span class="table-item table-item-sub"></span>
-
-                    <a class="table-item table-item-sub table-item-link">Подключить</a>
+                <div class="scheme-block__wrapper">
+                  <div class="scheme-block">
+                    <img src="./src/images/app-logo.png" alt="" class="scheme-logo" />
                   </div>
-                </ul>
+
+                  <h4 class="scheme-block__title">
+                    Приложение <br />
+                    <span class="scheme-block__normal">под Вас</span>
+                  </h4>
+                </div>
+
+                <div class="scheme-block__wrapper">
+                  <div class="scheme-block">
+                    <img src="./src/images/showcase-logo.png" alt="" class="scheme-logo" />
+                  </div>
+
+                  <h4 class="scheme-block__title">Умная витрина</h4>
+                </div>
+              </div>
+
+              <img class="scheme-line scheme-line__reversed scheme-line__2" src="./src/images/lines-reversed.svg"
+                alt="" />
+
+              <div class="company-logo__wrapper">
+                <img class="company-logo" src="./src/images/company-logo.svg" />
+                <img class="company-logo__text" src="./src/images/Arbitrage.House.svg" alt="" />
+              </div>
+
+              <img class="scheme-line scheme-line__3" src="./src/images/lines.svg" alt="" />
+
+              <div class="blocks">
+                <div class="scheme-block__wrapper scheme-block__last">
+                  <div class="scheme-block">
+                    <img src="./src/images/bank-logo.svg" alt="" class="scheme-logo" />
+                  </div>
+
+                  <h4 class="scheme-block__title">Банки</h4>
+                </div>
+
+                <div class="scheme-block__wrapper scheme-block__last">
+                  <div class="scheme-block">
+                    <img src="./src/images/finance-logo.svg" alt="" class="scheme-logo" />
+                  </div>
+
+                  <h4 class="scheme-block__title">МФО</h4>
+                </div>
+
+                <div class="scheme-block__wrapper scheme-block__last">
+                  <div class="scheme-block">
+                    <img src="./src/images/insurance-logo.svg" alt="" class="scheme-logo" />
+                  </div>
+
+                  <h4 class="scheme-block__title">Страховые компании</h4>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="column-card column-card-user">
-            <div class="column-card-header">
-              <h3 class="column-card-title">Информация о пользователе</h3>
+          <div class="scheme-column__text column-text_2">
+            <h3 class="scheme-column__title">МАКСИМУМ ДОХОДА</h3>
 
-              <div class="card-header-buttons">
-                <button class="yellow-button card-button card-button-edit">
-                  <img src="./src/assets/images/pencil.svg" alt="" class="card-button-pencil" />
-                  <span>Редактировать</span>
-                </button>
-
-                <button class="yellow-button card-button card-button-edit">
-                  <img src="./src/assets/images/lock.svg" alt="" class="card-button-pencil" />
-                  <span>Сменить пароль</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="column-card-content">
-              <div class="card-content card-content-info">
-                <ul class="content-info">
-                  <span class="info-item-title bold"> Имя </span>
-
-                  <span class="info-item-value"> Сальвадор </span>
-
-                  <span class="info-item-title bold"> Фамилия </span>
-
-                  <span class="info-item-value"> Дали </span>
-
-                  <span class="info-item-title bold"> Почта </span>
-
-                  <span class="info-item-value">
-                    zpaint@yandex.ru
-                    <a href="" class="info-item-link">Изменить</a>
-                  </span>
-
-                  <span class="info-item-title bold">
-                    Мобильный телефон
-                  </span>
-
-                  <span class="info-item-value">
-                    +7 (915) 144-1780
-                    <a href="" class="info-item-link">Изменить</a>
-                  </span>
-
-                  <span class="info-item-title bold"> Skype </span>
-
-                  <span class="info-item-value blank-item"> Нет </span>
-
-                  <span class="info-item-title bold"> ICQ </span>
-
-                  <span class="info-item-value blank-item"> Нет </span>
-
-                  <span class="info-item-title bold"> Telegram </span>
-
-                  <span class="info-item-value blank-item"> Нет </span>
-
-                  <span class="info-item-title bold">
-                    Предпочтительный метод связи
-                  </span>
-
-                  <span class="info-item-value"> Телефон </span>
-
-                  <span class="info-item-title bold"> Дата рождения </span>
-
-                  <span class="info-item-value"> 1999-01-01 </span>
-
-                  <span class="info-item-title bold">
-                    2-факт. авторизация
-                  </span>
-
-                  <span class="info-item-value blank-item"> Нет </span>
-
-                  <span class="info-item-title bold"> API Token </span>
-
-                  <span class="info-item-value api-token">
-                    <span> 3ccf24f00a32c3c79433459dba675579</span>
-                  </span>
-
-                  <span class="info-item-title bold"></span>
-
-                  <span class="info-item-value info-item-generate">
-                    <a href="" class="info-item-link">Сгенерировать новый</a>
-                    <a href="" class="info-item-link">API документация</a>
-                  </span>
-                </ul>
-              </div>
-            </div>
+            <p class="scheme-column__description">
+              Мы постоянно оптимизируем способы закупки трафика, улучшаем
+              процессы его монетизации, договариваемся с рекламодателями,
+              чтобы ты мог лить с максимально высокими ставками.
+            </p>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="main-block main-help">
+      <img class="help-bg" src="./src/images/bg_4_completed.png" alt="" />
+      <img class="stats__bglogo" src="./src/images/company.svg" alt="" />
+
+      <div class="block-wrapper__help block-wrapper">
+        <div class="text-wrapper">
+          <h4 class="help-title">БЫСТРАЯ ПОМОЩь</h4>
+
+          <span class="help-paragraph">МЕНЕДЖЕР ВСЕГДА РЯДОМ</span>
+
+          <p class="help-description">
+            Если у тебя срочная проблема и нужно тушить пожар, твой менеджер
+            всегда на страже. Свистни в любой мессенджер — и он появится!
+          </p>
+
+          <a class="tg-link" href="">
+            <img class="tg-link__logo" src="./src/images/tg-logo.svg" alt="" />
+            <span class="tg-link__text">@Arbitrage.House</span>
+          </a>
+        </div>
+
+        <div class="image-wrapper">
+          <img class="image-wrapper__questions" src="./src/images/questions.png" alt="" />
+          <img class="image-wrapper__manager" src="./src/images/manager.png" alt="" />
+          <img class="image-wrapper__manager manager-mobile" src="./src/images/manager_2.png" alt="" />
+          <img class="image-wrapper__phone" src="./src/images/phone.png" alt="" />
+          <img class="image-wrapper__phone phone-mobile" src="./src/images/phone-mobile.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="main-block block-networks">
+      <div class="block-wrapper__networks block-wrapper">
+        <h3 class="networks-title">ВСЕ В ОДНОМ МЕСТЕ</h3>
+
+        <p class="networks-description">
+          В личном кабинете <strong>Arbitrage.House</strong> собраны рекламные
+          сети Google, Яндекс, MYTarget, ВК. Ты можешь пополнять баланс,
+          управлять рекламными бюджетами и смотреть доход и расход по каждому
+          объявлению в одном месте.
+        </p>
+
+        <div class="networks-list">
+          <div class="network-list__item">
+            <div class="network-logo__wrapper">
+              <img class="network-logo yandex-logo" src="./src/images/yandex-logo.svg" alt="" />
+            </div>
+
+            <span class="network-name"> Яндекс. Директ </span>
+          </div>
+
+          <div class="network-list__item">
+            <div class="network-logo__wrapper">
+              <img class="network-logo vk-logo" src="./src/images/vk-logo.svg" alt="" />
+            </div>
+
+            <span class="network-name"> Вконтакте </span>
+          </div>
+
+          <div class="network-list__item">
+            <div class="network-logo__wrapper">
+              <img class="network-logo google-logo" src="./src/images/google-logo.svg" alt="" />
+            </div>
+
+            <span class="network-name"> Google Adwords </span>
+          </div>
+
+          <div class="network-list__item">
+            <div class="network-logo__wrapper">
+              <img class="network-logo my-logo" src="./src/images/my-logo.svg" alt="" />
+            </div>
+
+            <span class="network-name"> myTarget </span>
+          </div>
+
+          <div class="network-list__item">
+            <div class="network-logo__wrapper">
+              <img class="network-logo market-logo" src="./src/images/market-logo.svg" alt="" />
+            </div>
+
+            <span class="network-name"> MarketGid </span>
+          </div>
+
+          <div class="network-list__item">
+            <div class="network-logo__wrapper">
+              <img class="network-logo tiktok-logo" src="./src/images/tiktok-logo.svg" alt="" />
+            </div>
+
+            <span class="network-name"> TikTok </span>
+          </div>
+        </div>
+
+        <div class="draw">
+          <img class="draw-image" src="./src/images/party.png" alt="" />
+
+          <div class="draw-text">
+            <h3 class="draw-title">Ого! Это все мне?</h3>
+
+            <p class="draw-description">
+              Внутренний магазин призов, розыгрыши от рекламодателей,
+              масштабные акции от
+              <strong>Arbitrage.House</strong>, закрытые вечеринки вебмастеров
+              — все для того, чтобы ты получал еще больше профита с каждой
+              конверсии.
+            </p>
+
+            <button class="draw-button">
+              <span class="draw-button__text">Присоединиться</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-block block-platforms">
+      <div class="block-wrapper__platforms block-wrapper">
+        <div class="platforms-header">
+          <h4 class="platforms-title">ВИДЫ ПЛОЩАДОК</h4>
+
+          <h3 class="platforms-question">А МОЖНО ВСЕХ ПОСМОТРЕТЬ?</h3>
+
+          <p class="platforms-description">
+            В нашей системе ты можешь выбрать площадки, на которую будешь лить
+            трафик. Каждому вебмастеру выделяется собственный сайт и бот. Ниже
+            мы собрали краткие характеристики каждой площадке.
+          </p>
+        </div>
+
+        <div class="vs-block vs-block-tablet">
+          <img src="./src/images/arbitrage-house.svg" class="arbitrage-bg" alt="" />
+
+          <input class="vs-radio vs-radio__left" checked type="radio" name="vsradio" value="left" id="vsRadioLeft" />
+          <input class="vs-radio vs-radio__right" type="radio" name="vsradio" value="right" id="vsRadioRight" />
+
+          <div class="labels-wrapper">
+            <label class="vs-label vs-label__left" for="vsRadioLeft">
+              <img src="./src/images/website-content.svg" alt="" class="vs-column__logo vs-logo__website" />
+
+              <h5 class="vs-column__title">Сайт-витрина</h5>
+            </label>
+
+            <label class="vs-label vs-label__right" for="vsRadioRight">
+              <img src="./src/images/robot.svg" alt="" class="vs-column__logo vs-logo__robot" />
+
+              <h5 class="vs-column__title">ЗаймоБот</h5>
+            </label>
+          </div>
+
+          <div class="vs-column vs-column__left">
+            <img src="./src/images/website-content.svg" alt="" class="vs-column__logo vs-logo__website" />
+
+            <h5 class="vs-column__title">Сайт-витрина</h5>
+
+            <p class="vs-column__description">
+              Самая простая и популярная площадка. Можно лить со всех каналов
+              закупки трафика. Пользователь проходит короткую анкету на сайте,
+              после чего ему показывается список финансовый компаний.
+            </p>
+
+            <ul class="vs-column__list">
+              <li class="vs-list__item">
+                <img src="./src/images/network.svg" alt="" class="vs-item__logo vs-logo__network" />
+
+                <span class="vs-item__title">Большой выбор источников</span>
+                <p class="vs-item__description">
+                  Ограничений по трафику гораздо меньше, <br />
+                  чем в ботах
+                </p>
+              </li>
+
+              <li class="vs-list__item">
+                <img src="./src/images/tap.svg" alt="" class="vs-item__logo vs-logo__tap" />
+
+                <span class="vs-item__title">Прост в использовании</span>
+                <p class="vs-item__description">
+                  Подходит для пользователей <br />
+                  разных возрастов
+                </p>
+              </li>
+              <li class="vs-list__item">
+                <img src="./src/images/coding.svg" alt="" class="vs-item__logo vs-logo__coding" />
+
+                <span class="vs-item__title">Высокий спрос среди вебмастеров</span>
+                <p class="vs-item__description">
+                  Самая востребованная и популярная площадка <br />
+                  на финансовом рынке
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="vs-column__line">
+            <div class="vs-icon__border">
+              <span class="vs-icon">VS</span>
+            </div>
+          </div>
+
+          <div class="vs-column vs-column__right">
+            <img src="./src/images/robot.svg" alt="" class="vs-column__logo vs-logo__robot" />
+
+            <h5 class="vs-column__title">ЗаймоБот</h5>
+
+            <p class="vs-column__description">
+              Относительно новая и очень эффективная площадка. Рекомендуется
+              лить из соц.сетей. Рассчитана мобильный трафик на более молодых
+              пользователей. Бот подбирает компании, исходя из заполненной
+              пользователем анкеты.
+            </p>
+
+            <ul class="vs-column__list">
+              <li class="vs-list__item">
+                <img src="./src/images/tap.svg" alt="" class="vs-item__logo vs-logo__tap" />
+
+                <span class="vs-item__title">Прост в использовании</span>
+                <p class="vs-item__description">
+                  Мобильный трафик лучше окупается, так как пользователям
+                  <br />
+                  легче использовать бота, пользуясь мобильным телефоном.
+                </p>
+              </li>
+
+              <li class="vs-list__item">
+                <img src="./src/images/couple.svg" alt="" class="vs-item__logo vs-logo__couple" />
+
+                <span class="vs-item__title">Подходит не всем</span>
+                <p class="vs-item__description">
+                  Целевая аудитория такой площадки - пользователи <br />
+                  соц.сетей и мессенджеров до 35 лет
+                </p>
+              </li>
+
+              <li class="vs-list__item">
+                <img src="./src/images/document.svg" alt="" class="vs-item__logo vs-logo__document" />
+
+                <span class="vs-item__title">Высокие показатели окупаемости</span>
+                <p class="vs-item__description">
+                  При грамотном подходе бот может окупаться <br />
+                  в 3 раза
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="vs-block vs-block-desktop">
+          <img src="./src/images/arbitrage-house.svg" class="arbitrage-bg" alt="" />
+
+          <div class="vs-column vs-column__left">
+            <img src="./src/images/website-content.svg" alt="" class="vs-column__logo vs-logo__website" />
+
+            <h5 class="vs-column__title">Сайт-витрина</h5>
+
+            <p class="vs-column__description">
+              Самая простая и популярная площадка. Можно лить со всех каналов
+              закупки трафика. Пользователь проходит короткую анкету на сайте,
+              после чего ему показывается список финансовый компаний.
+            </p>
+          </div>
+
+          <div class="vs-column__line">
+            <div class="vs-icon__border">
+              <span class="vs-icon">VS</span>
+            </div>
+          </div>
+
+          <div class="vs-column vs-column__right">
+            <img src="./src/images/robot.svg" alt="" class="vs-column__logo vs-logo__robot" />
+
+            <h5 class="vs-column__title">ЗаймоБот</h5>
+
+            <p class="vs-column__description">
+              Относительно новая и очень эффективная площадка. Рекомендуется
+              лить из соц.сетей. Рассчитана мобильный трафик на более молодых
+              пользователей. Бот подбирает компании, исходя из заполненной
+              пользователем анкеты.
+            </p>
+          </div>
+
+          <ul class="vs-advantages vs-column__list">
+            <li class="vs-list__item">
+              <img src="./src/images/network.svg" alt="" class="vs-item__logo vs-logo__network" />
+
+              <span class="vs-item__title">Большой выбор источников</span>
+              <p class="vs-item__description">
+                Ограничений по трафику гораздо меньше, <br />
+                чем в ботах
+              </p>
+            </li>
+
+            <li class="vs-list__item">
+              <img src="./src/images/tap.svg" alt="" class="vs-item__logo vs-logo__tap" />
+
+              <span class="vs-item__title">Прост в использовании</span>
+              <p class="vs-item__description">
+                Мобильный трафик лучше окупается, так как пользователям <br />
+                легче использовать бота, пользуясь мобильным телефоном.
+              </p>
+            </li>
+
+            <li class="vs-list__item">
+              <img src="./src/images/tap.svg" alt="" class="vs-item__logo vs-logo__tap" />
+
+              <span class="vs-item__title">Прост в использовании</span>
+              <p class="vs-item__description">
+                Подходит для пользователей <br />
+                разных возрастов
+              </p>
+            </li>
+
+            <li class="vs-list__item">
+              <img src="./src/images/couple.svg" alt="" class="vs-item__logo vs-logo__couple" />
+
+              <span class="vs-item__title">Подходит не всем</span>
+              <p class="vs-item__description">
+                Целевая аудитория такой площадки - пользователи <br />
+                соц.сетей и мессенджеров до 35 лет
+              </p>
+            </li>
+
+            <li class="vs-list__item">
+              <img src="./src/images/coding.svg" alt="" class="vs-item__logo vs-logo__coding" />
+
+              <span class="vs-item__title">Высокий спрос среди вебмастеров</span>
+              <p class="vs-item__description">
+                Самая востребованная и популярная площадка <br />
+                на финансовом рынке
+              </p>
+            </li>
+
+            <li class="vs-list__item">
+              <img src="./src/images/document.svg" alt="" class="vs-item__logo vs-logo__document" />
+
+              <span class="vs-item__title">Высокие показатели окупаемости</span>
+              <p class="vs-item__description">
+                При грамотном подходе бот может окупаться <br />
+                в 3 раза
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <footer class="footer">
+    <div class="header-company company-wrapper">
+      <img class="company-wrapper__logo" src="./src/images/company-logo.svg" />
+
+      <h2 class="company-wrapper__title">Arbitrage.House</h2>
+    </div>
+
+    <span class="footer-company__date">© 2021</span>
+  </footer>
 </body>
 
-<script src="./src/scripts/index.js"></script>
+<script src="./src/phone/js/utils.js"></script>
+<script src="./src/phone/js/intlTelInput.min.js"></script>
+<script src="./src/scripts/main.js"></script>
 
 </html>

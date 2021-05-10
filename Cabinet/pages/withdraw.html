@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Баланс</title>
+
+  <link rel="stylesheet" href="./../src/styles/normalize.css" />
+  <link rel="stylesheet" href="./../src/assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="./../src/styles/index.css" />
+  <link rel="stylesheet" href="./../src/styles/withdraw.css" />
+</head>
+
+<body>
+  <input class="menu-checkbox popup-checkbox" type="checkbox" name="" id="menu-checkbox" />
+  <input class="confirm-checkbox popup-checkbox" type="checkbox" name="" id="confirm-popup" />
+
+  <div class="popup popup-menu">
+    <label class="menu-close-wrapper menu-label" for="menu-checkbox">
+      <img class="menu-close-icon" src="./../src/assets/images/menu-close.svg" alt="" />
+    </label>
+
+    <div class="popup-menu-content">
+      <div class="popup-menu-logo">
+        <img src="./../src/assets/images/agency-logo.svg" alt="" class="header-logo" />
+
+        <h1 class="header-title">Arbitrage.House</h1>
+      </div>
+
+      <div class="popup-menu-nav">
+        <ul class="popup-nav pages-menu">
+          <li class="menu-item">
+            <a href="./../index.html" class="menu-link">
+              <span>Мой аккаунт</span>
+            </a>
+          </li>
+
+          <li class="menu-item menu-item-active">
+            <a href="./stats.html" class="menu-link">
+              <span>Статистика</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="./balance.html" class="menu-link">
+              <span>Баланс</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="./faq.html" class="menu-link">
+              <span>FAQ</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <span>Выход</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="popup-menu-support">
+        <span class="menu-support-title bold">Техподдержка:</span>
+        <div class="telegram-wrapper">
+          <img class="telegram-logo" src="./../src/assets/images/tg-logo.svg" alt="" />
+          <a class="telegram-link" href="#">@Arbitrage.House</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup popup-confirm" id="confirm-popup">
+    <div class="popup-wrapper confirm-wrapper">
+      <div class="popup-container confirm-container">
+        <label class="popup-close-wrapper confirm-close-wrapper confirm-label-close" for="confirm-popup">
+          <img class="popup-close-icon" src="./../src/assets/images/menu-close.svg" alt="" />
+        </label>
+
+        <div class="confirm-content">
+          <div class="popup-head">
+            <span class="popup-head-title">Введите код подтверждения</span>
+          </div>
+
+          <form class="popup-form">
+            <div class="input-item">
+              <input class="popup-input-text confirm-input-text input-error" required placeholder="Код из СМС"
+                type="text" name="sms-code" id="" />
+
+              <span class="input-error-message">
+                Код введен неверно
+              </span>
+            </div>
+
+
+            <input class="popup-confirm-button yellow-button" value="Зарегистрироваться" type="submit" />
+            <input class="popup-confirm-button error-button yellow-button" value="Отправить код повторно"
+              type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-content">
+      <div class="header-logo-wrapper">
+        <img src="./../src/assets/images/agency-logo.svg" alt="" class="header-logo" />
+
+        <h1 class="header-title">Arbitrage.House</h1>
+      </div>
+
+      <div class="header-button-wrapper">
+        <button class="header-button">
+          <span>Кабинет</span>
+        </button>
+
+        <label class="header-burger mobile menu-label" for="menu-checkbox">
+          <img class="header-burger-image" src="./../src/assets/images/menu-burger.svg" alt="" />
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-content">
+      <div class="page-title-wrapper">
+        <h2 class="page-title">ЛИЧНЫЙ КАБИНЕТ</h2>
+
+        <p class="page-title-sub mobile">Баланс</p>
+      </div>
+
+      <div class="main-columns">
+        <div class="main-menu">
+          <ul class="pages-menu">
+            <li class="menu-item">
+              <a href="./../index.html" class="menu-link">
+                <span>Мой аккаунт</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="./stats.html" class="menu-link">
+                <span>Статистика</span>
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-active">
+              <a href="./balance.html" class="menu-link">
+                <span>Баланс</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="./faq.html" class="menu-link">
+                <span>FAQ</span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <span>Выход</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-column">
+
+          <div class="main-description">
+            <div class="description-text">
+              <h3 class="description-title">
+                Запрос на вывод средств
+              </h3>
+
+              <p class="description-text info-item-value">
+                Подробнее об условиях выплат можно узнать
+                <a class="info-item-link" href="./faq.html">тут</a>
+              </p>
+            </div>
+
+            <button class="description-button yellow-button">
+              <a href="./balance.html">Отменить</a>
+            </button>
+          </div>
+
+          <div class="column">
+
+            <div class="column-card">
+
+              <div class="droplist-container">
+                <input class="droplist-checkbox" type="checkbox" name="" id="droplist-checkbox-1">
+                <label class="column-card-header" for="droplist-checkbox-1">
+                  <h3 class="column-card-title">Автоматическая</h3>
+
+                  <img class="header-dropdown" src="./../src/assets/images/dropdown.svg" alt="" />
+                </label>
+
+                <div class="column-card-content">
+                  <div class="card-content">
+
+                    <div class="content-error">
+                      <span>
+                        Необходимо
+                        <a class="info-item-link">задать</a>
+                        реквизит для формирования автоматических выплат
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="column-card">
+
+              <div class="droplist-container">
+                <input class="droplist-checkbox" type="checkbox" name="" id="droplist-checkbox-3">
+                <label class="column-card-header" for="droplist-checkbox-3">
+                  <h3 class="column-card-title">По запросу</h3>
+
+                  <img class="header-dropdown" src="./../src/assets/images/dropdown.svg" alt="" />
+                </label>
+
+                <div class="column-card-content">
+                  <div class="card-content">
+
+                    <ul class="content-info">
+                      <span class="info-item-title bold"> Доступно для </span>
+
+                      <span class="info-item-value"> Master, Gold, Platinum </span>
+
+                      <span class="info-item-title bold">
+                        Доступно для вывода
+                      </span>
+
+                      <span class="info-item-value"> 9 004 811,92 руб </span>
+
+                    </ul>
+
+                    <div class="droplist-content">
+
+                      <div class="selects-container">
+                        <div class="custom-select">
+                          <select>
+                            <option class="select-first" value="0">Выберите тип оплаты</option>
+                            <option value="1">Выберите тип оплаты</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Citroen</option>
+                          </select>
+                        </div>
+
+                        <div class="custom-select">
+                          <select>
+                            <option class="select-first" value="0">Выберите реквизит</option>
+                            <option value="1">Выберите реквизит</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Citroen</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <ul class="content-info">
+                        <span class="info-item-title bold"> Доступная сумма </span>
+
+                        <span class="info-item-value"> 9 010 782 руб </span>
+
+                        <span class="info-item-title bold">
+                          Минимальная сумма
+                        </span>
+
+                        <span class="info-item-value"> - руб </span>
+
+                      </ul>
+
+                      <div class="request-inputs">
+                        <div class="request-input-wrapper">
+                          <span class="input-title info-item-value bold">Сумма запроса</span>
+                          <input class="request-input" placeholder="0" type="text" name="amount" id="" />
+                        </div>
+
+                        <div class="request-input-wrapper">
+                          <span class="input-title info-item-value bold">Комментарий</span>
+                          <input class="request-input" type="text" name="comment" id="" />
+                        </div>
+                      </div>
+
+                      <div class="request-confirm">
+                        <span class="confirm-title info-item-value bold">
+                          Подтверждение кода
+                        </span>
+
+                        <button class="confirm-button yellow-button popup-button">
+                          <label class="confirm-label popup-label" for="confirm-popup">Выслать код</label>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="column">
+
+            <div class="column-card">
+
+              <div class="droplist-container">
+                <input class="droplist-checkbox" type="checkbox" name="" id="droplist-checkbox-2">
+                <label class="column-card-header" for="droplist-checkbox-2">
+                  <h3 class="column-card-title">По запросу (с использованием HOLD)</h3>
+
+                  <img class="header-dropdown" src="./../src/assets/images/dropdown.svg" alt="" />
+                </label>
+
+                <div class="column-card-content">
+                  <div class="card-content">
+                    <ul class="content-info">
+                      <span class="info-item-title bold"> Доступно для </span>
+
+                      <span class="info-item-value"> Master, Gold, Platinum </span>
+
+                      <span class="info-item-title bold">
+                        Доступно для вывода
+                      </span>
+
+                      <span class="info-item-value"> 9 004 811,92 руб </span>
+
+                    </ul>
+
+                    <div class="droplist-content">
+
+                      <div class="selects-container">
+                        <div class="custom-select">
+                          <select>
+                            <option class="select-first" value="0">Выберите тип оплаты</option>
+                            <option value="1">Выберите тип оплаты</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Citroen</option>
+                          </select>
+                        </div>
+
+                        <div class="custom-select">
+                          <select>
+                            <option class="select-first" value="0">Выберите реквизит</option>
+                            <option value="1">Выберите реквизит</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Citroen</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <ul class="content-info">
+                        <span class="info-item-title bold"> Доступная сумма </span>
+
+                        <span class="info-item-value"> 9 010 782 руб </span>
+
+                        <span class="info-item-title bold">
+                          Минимальная сумма
+                        </span>
+
+                        <span class="info-item-value"> - руб </span>
+
+                      </ul>
+
+                      <div class="request-inputs">
+                        <div class="request-input-wrapper">
+                          <span class="input-title info-item-value bold">Сумма запроса</span>
+                          <input class="request-input" placeholder="0" type="text" name="amount" id="" />
+                        </div>
+
+                        <div class="request-input-wrapper">
+                          <span class="input-title info-item-value bold">Комментарий</span>
+                          <input class="request-input" type="text" name="comment" id="" />
+                        </div>
+                      </div>
+
+                      <div class="request-confirm">
+                        <span class="confirm-title info-item-value bold">
+                          Подтверждение кода
+                        </span>
+
+                        <button class="confirm-button yellow-button popup-button">
+                          <label class="confirm-label popup-label" for="confirm-popup">Выслать код</label>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="column-card">
+
+              <div class="droplist-container">
+                <input class="droplist-checkbox" type="checkbox" name="" id="droplist-checkbox-4">
+                <label class="column-card-header" for="droplist-checkbox-4">
+                  <h3 class="column-card-title">Пополнение аккаунта рекламной сети</h3>
+
+                  <img class="header-dropdown" src="./../src/assets/images/dropdown.svg" alt="" />
+                </label>
+
+                <div class="column-card-content">
+                  <div class="card-content">
+
+                    <ul class="content-info">
+                      <span class="info-item-title bold"> Доступно для </span>
+
+                      <span class="info-item-value"> Sandbox, Master, Gold, Platinum </span>
+
+                      <span class="info-item-title bold">
+                        Доступно для вывода
+                      </span>
+
+                      <span class="info-item-value"> 9 004 811,92 руб </span>
+
+                    </ul>
+
+                    <div class="droplist-content">
+
+                      <div class="selects-container">
+                        <div class="custom-select">
+                          <select>
+                            <option class="select-first" value="0">Выберите тип оплаты</option>
+                            <option value="1">Выберите тип оплаты</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Citroen</option>
+                          </select>
+                        </div>
+
+                        <div class="custom-select">
+                          <select>
+                            <option class="select-first" value="0">Выберите реквизит</option>
+                            <option value="1">Выберите реквизит</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Citroen</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <ul class="content-info">
+                        <span class="info-item-title bold"> Доступная сумма </span>
+
+                        <span class="info-item-value"> 9 010 782 руб </span>
+
+                        <span class="info-item-title bold">
+                          Минимальная сумма
+                        </span>
+
+                        <span class="info-item-value"> - руб </span>
+
+                      </ul>
+
+                      <div class="request-inputs">
+                        <div class="request-input-wrapper">
+                          <span class="input-title info-item-value bold">Сумма запроса</span>
+                          <input class="request-input" placeholder="0" type="text" name="amount" id="" />
+                        </div>
+
+                        <div class="request-input-wrapper">
+                          <span class="input-title info-item-value bold">Комментарий</span>
+                          <input class="request-input" type="text" name="comment" id="" />
+                        </div>
+                      </div>
+
+                      <div class="request-confirm">
+                        <span class="confirm-title info-item-value bold">
+                          Подтверждение кода
+                        </span>
+
+                        <button class="confirm-button yellow-button popup-button">
+                          <label class="confirm-label popup-label" for="confirm-popup">Выслать код</label>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </main>
+</body>
+
+
+<script src="./../src/scripts/index.js"></script>
+<script src="./../src/scripts/withdraw.js"></script>
+
+</html>
