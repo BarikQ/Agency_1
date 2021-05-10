@@ -86,15 +86,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
   selects();
 
   const popups = document.querySelectorAll('.popup');
+  const closeButtons = document.querySelectorAll('.popup-close-wrapper');
+  const popupInputs = document.querySelectorAll('.popup-input');
 
   popups.forEach(popup => {
     popup.addEventListener('click', (event) => {
       event.stopPropagation();
-      console.log(event.target.classList);
+      
       if (event.target.classList.contains('popup')) {
-        console.log(document.querySelector(`#${popup.id}`));
         document.querySelector(`#${popup.id}`).checked = false;
+
+        popupInputs.forEach(input => {
+          input.value = null;
+        });
       }
+    });
+  });
+
+  closeButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      popupInputs.forEach(input => {
+        input.value = null;
+      });
     });
   });
 

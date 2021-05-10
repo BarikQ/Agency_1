@@ -45,13 +45,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const loginTransButton = document.querySelector('#login-transition');
   const sendButton = document.querySelector('#send-code');
   const closeButtons = document.querySelectorAll('.popup-close-wrapper');
-  
+  const popupInputs = document.querySelectorAll('.popup-input');
 
   popups.forEach(popup => {
     popup.addEventListener('click', (event) => {
       event.stopPropagation();
       if (event.target.classList.contains('popup')) {
         document.querySelector(`#${popup.id}`).checked = false;
+
+        popupInputs.forEach(input => {
+          input.value = null;
+          if (input.classList.contains('country')) {
+            input.value = -1;
+            countrySelect.classList.remove('country-selected');
+          }
+        });
 
         popupsWrappers.forEach(wrapper => {
           if (!wrapper.classList.contains('signup-wrapper')) {
@@ -99,6 +107,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
       popupsWrappers.forEach(wrapper => {
         if (!wrapper.classList.contains('signup-wrapper')) {
           wrapper.classList.add('hide');
+
+          popupInputs.forEach(input => {
+            input.value = null;
+            if (input.classList.contains('country')) {
+              input.value = -1;
+              countrySelect.classList.remove('country-selected');
+            }
+          });
         } else {
           wrapper.classList.remove('hide');
         }
