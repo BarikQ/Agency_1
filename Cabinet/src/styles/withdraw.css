@@ -332,7 +332,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #333333;
   text-decoration: none;
 }
 

@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: HelveticaNeueCyr;
+  font-family: HelveticaNeueCyr !important;
   padding-bottom: 86px;
   overflow-x: hidden;
 }
@@ -68,7 +68,7 @@ a:hover {
 
 .header-title {
   margin-left: 11px;
-  font-family: MADE Tommy Soft;
+  font-family: MADE Tommy Soft !important;
   font-style: normal;
   font-weight: 900;
   font-size: 27px;
@@ -121,13 +121,6 @@ a:hover {
   transition: 0.2s ease all;
 }
 
-/* .menu-item:hover {
-  background: #f5f6f8;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  transition: 0.2s ease all;
-} */
-
 .menu-item-active {
   background: #eef1f7;
   border-top-left-radius: 8px;
@@ -148,7 +141,6 @@ a:hover {
   padding: 20px 20px 10px;
   background: #eef1f7;
   border-radius: 8px;
-  /* border-top-left-radius: 0; */
 }
 
 .column-card {
@@ -205,11 +197,6 @@ a:hover {
 .card-button {
   transition: 0.2s ease all;
 }
-
-/* .card-button:hover {
-  background: transparent;
-  transition: 0.2s ease all;
-} */
 
 .card-button-edit {
   padding: 5px 13px 5px 9px;
@@ -469,6 +456,7 @@ a:hover {
   .popup-nav .menu-item {
     height: unset;
     padding: 12px 22px;
+    border-radius: 0;
   }
 
   .menu-support-title {
