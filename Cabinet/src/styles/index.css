@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+.span-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .popup-checkbox,
 .popup {
   display: none;
