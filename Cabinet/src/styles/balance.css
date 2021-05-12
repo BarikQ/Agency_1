@@ -39,6 +39,7 @@
 .withdraw-button {
   margin: 7px;
   line-height: 17px;
+  padding-bottom: 5px !important;
 }
 
 .withdraw-button a {
