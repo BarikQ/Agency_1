@@ -8,12 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-.span-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .popup-checkbox,
 .popup {
   display: none;
@@ -183,10 +177,7 @@ a:hover {
 
 .yellow-button {
   min-height: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: table-cell;
   background: #ffd600;
   border: 1.5px solid #ffd600;
   box-sizing: border-box;
@@ -195,9 +186,16 @@ a:hover {
   font-weight: 550;
   font-size: 14px;
   letter-spacing: -0.3px;
-  line-height: 14px;
+  line-height: 15px;
   text-align: center;
   color: #333333;
+}
+
+button span, 
+button img,
+button a {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .card-button {
@@ -210,7 +208,9 @@ a:hover {
 }
 
 .card-button-pencil {
-  margin-right: 9px;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
 }
 
 .card-content {
