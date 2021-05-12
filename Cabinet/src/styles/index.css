@@ -308,7 +308,7 @@ a:hover {
   .menu-item {
     width: 100%;
     max-width: unset;
-    border-radius: 8px;
+    border-radius: 0;
   }
 
   .card-button-edit span {
@@ -367,9 +367,6 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
     background: #edf0f5;
-  }
-
-  .menu-close-icon {
   }
 
   .popup-menu-content {
@@ -456,7 +453,6 @@ a:hover {
   .popup-nav .menu-item {
     height: unset;
     padding: 12px 22px;
-    border-radius: 0;
   }
 
   .menu-support-title {

@@ -10,10 +10,6 @@
   overflow: auto;
 }
 
-.stats-table-wrapper {
-  overflow-x: scroll;
-}
-
 .stats-table {
   display: grid;
   grid-template: 37px / 1fr;
@@ -95,11 +91,15 @@
 }
 
 @media (max-width: 1200px) {
-@-moz-document url-prefix() {
-  .stats-table {
-    padding-bottom: 15px;
+  @-moz-document url-prefix() {
+    .stats-table {
+      padding-bottom: 15px;
+    }
   }
-}
+
+  .stats-table-wrapper {
+    overflow-x: scroll;
+  }
 }
 
 @media (max-width: 768px) {

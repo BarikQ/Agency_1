@@ -61,6 +61,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   position: fixed;
   left: 0;
   top: 0;
@@ -2068,7 +2069,6 @@ body {
 @media (max-height: 630px) {
   .popup {
     padding: 15px;
-    align-items: flex-start;
     overflow: scroll;
   }
 }
