@@ -37,9 +37,6 @@
 }
 
 .withdraw-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 7px;
 }
 
@@ -58,7 +55,6 @@
   max-width: 134px;
   margin-left: 0;
   margin-right: 14px;
-  padding: 0;
 }
 
 .withdraw-button:last-child {

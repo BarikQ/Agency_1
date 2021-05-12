@@ -176,7 +176,9 @@ a:hover {
 }
 
 .yellow-button {
-  min-height: 30px;
+  /* min-height: 30px; */
+  padding-top: 6px;
+  padding-bottom: 6px;
   display: table-cell;
   background: #ffd600;
   border: 1.5px solid #ffd600;
@@ -189,6 +191,7 @@ a:hover {
   line-height: 15px;
   text-align: center;
   color: #333333;
+  text-decoration: none;
 }
 
 button span, 
