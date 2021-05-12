@@ -176,9 +176,9 @@ a:hover {
 }
 
 .yellow-button {
-  /* min-height: 30px; */
-  padding-top: 6px;
-  padding-bottom: 6px;
+  min-height: 30px;
+  padding-top: 6px !important; 
+  padding-bottom: 6px !important;
   display: table-cell;
   background: #ffd600;
   border: 1.5px solid #ffd600;
