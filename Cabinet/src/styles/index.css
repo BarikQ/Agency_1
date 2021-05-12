@@ -195,6 +195,11 @@ a:hover {
   white-space: nowrap;
 }
 
+.yellow-button:not(.card-button-edit) {
+  line-height: 17px;
+  padding-bottom: 5px !important;
+}
+
 button span, 
 button img,
 button a {
