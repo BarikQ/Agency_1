@@ -192,6 +192,7 @@ a:hover {
   text-align: center;
   color: #333333;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 button span, 
